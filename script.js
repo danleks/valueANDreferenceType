@@ -65,3 +65,21 @@ const canChange = (shopTransaction, cashier) => {
 console.log(canChange(shopTransaction, cashier));
 console.log(cashier);
 
+
+console.log([10] === [10]);
+
+let oldArray = [];
+let object = {};
+
+object.newArray = oldArray;
+oldArray.push(10);
+
+console.log(object.newArray === oldArray);
+
+
+let a = [10];
+let b = [10];
+
+if (JSON.stringify(a) === JSON.stringify(b)) {
+    console.log('It\'s true');
+}
